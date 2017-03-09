@@ -48,7 +48,7 @@ public class CMSFilter implements Filter{
             
             //Als account niet actief is hier feedback voor terug geven
             if(u != null && !u.isActive()){
-                r.setAttribute("usernameError", "Uw account is niet actief");
+                r.setAttribute("usernameError", "Uw account is niet actief!");
             }
             
             //Geef de login pagina weer inplaats van de aangevraagde pagina
