@@ -112,13 +112,13 @@ public class Car implements Serializable, Validate {
         ErrorList list = new ErrorList();
         
         //controleer alle velden
-        if(licensePlate == null || licensePlate.equals("")){
+        if(licensePlate == null || licensePlate.isEmpty()){
             list.setError(new DomainError("licensePlateError", "Vul het kenteken in"));
         }
-        if(brand == null || brand.equals("")){
+        if(brand == null || brand.isEmpty()){
             list.setError(new DomainError("brandError", "Vul het merk in"));
         }
-        if(model == null || model.equals("")){
+        if(model == null || model.isEmpty()){
             list.setError(new DomainError("modelError", "Vul het model in"));
         }
         
